@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ldToday"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:clipToPadding="false"
+    android:descendantFocusability="blocksDescendants"
+    android:gravity="center"
+    android:weightSum="11">
+
+    <TextView
+        android:id="@+id/tv_item_gridview"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="5"
+        android:fontFamily="@font/notosansbold"
+        android:gravity="center_horizontal" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="6"
+        android:orientation="vertical"
+        android:weightSum="7">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:ellipsize="marquee"
+            android:fontFamily="@font/notosansbold"
+            android:gravity="center_horizontal|center_vertical"
+            android:includeFontPadding="false"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+</LinearLayout>
